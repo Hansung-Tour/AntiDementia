@@ -17,5 +17,5 @@ class MainActivity : AppCompatActivity() {
 
         navController = nav_host_fragment.findNavController()
     }
-    
+
 }
