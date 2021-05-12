@@ -10,11 +10,9 @@ import androidx.navigation.Navigation
 
 
 import com.hansungtour.antidementia.R
-import kotlinx.android.synthetic.main.fragment_question.* //...fragment_question**Number**.*
+import kotlinx.android.synthetic.main.fragment_question2.* //...fragment_question**Number**.*
 
-var score = IntArray(20) //초기 배열 수정 금지 QuestionFragment(1번문제)에서 최초 생성
-
-class QuestionFragment : Fragment(), View.OnClickListener {
+class Question2Fragment : Fragment(), View.OnClickListener {
 
     lateinit var navController: NavController
 
@@ -23,7 +21,7 @@ class QuestionFragment : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_question, container, false) //fragment_question 수정
+        return inflater.inflate(R.layout.fragment_question2, container, false) //fragment_question 수정
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,7 +33,7 @@ class QuestionFragment : Fragment(), View.OnClickListener {
             score[index] = 0
         }
 
-        QuestionFragmentDirections.actionQuestionFragmentToQuestion2Fragment(score) //Question**Number**FragmentDirections.actionQuestion**Number**FragmentToQuestion**Number**Question
+        Question2FragmentDirections.actionQuestion2FragmentToResultFragment(score) //Question**Number**FragmentDirections.actionQuestion**Number**FragmentToQuestion**Number**Question
 
         op1.setOnClickListener(this)
         op2.setOnClickListener(this)
@@ -44,11 +42,11 @@ class QuestionFragment : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        when(v?.id) { //0==오답, 1==정답
-            R.id.op1->{score[0] = 0}
-            R.id.op2->{score[0] = 1} //이 문제 같은 경우 여기가 정답
-            R.id.op3->{score[0] = 0}
-            R.id.next->{navController.navigate(R.id.action_questionFragment_to_question2Fragment)} //R.id.action_question**Number**Fragment_to_question**Number**Fragment 자동생성
+        when(v?.id) { //0==오답, 1==정답, score[Number] Number가 0인 경우 1번문제
+            R.id.op1->{score[1] = 0}
+            R.id.op2->{score[1] = 1} //이 문제 같은 경우 여기가 정답
+            R.id.op3->{score[1] = 0}
+            R.id.next->{navController.navigate(R.id.action_question2Fragment_to_resultFragment)} //R.id.action_question**Number**Fragment_to_question**Number**Fragment 자동생성
         }
     }
 }
