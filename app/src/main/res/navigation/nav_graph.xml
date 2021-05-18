@@ -26,9 +26,6 @@
         <action
             android:id="@+id/action_questionFragment_to_question2Fragment"
             app:destination="@id/question2Fragment" />
-        <argument
-            android:name="score"
-            app:argType="integer[]" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -51,10 +48,178 @@
         android:label="fragment_question2"
         tools:layout="@layout/fragment_question2" >
         <action
-            android:id="@+id/action_question2Fragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            android:id="@+id/action_question2Fragment_to_question3Fragment"
+            app:destination="@id/question3Fragment" />
         <argument
             android:name="score"
             app:argType="integer[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/question3Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question3Fragment"
+        android:label="fragment_question3"
+        tools:layout="@layout/fragment_question3" >
+        <action
+            android:id="@+id/action_question3Fragment_to_question4Fragment"
+            app:destination="@id/question4Fragment" />
+        <argument
+            android:name="score"
+            app:argType="integer[]" />
+        <action
+            android:id="@+id/action_question3Fragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question4Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question4Fragment"
+        android:label="fragment_question4"
+        tools:layout="@layout/fragment_question4" >
+        <action
+            android:id="@+id/action_question4Fragment_to_question5Fragment"
+            app:destination="@id/question5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question5Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question5Fragment"
+        android:label="fragment_question5"
+        tools:layout="@layout/fragment_question5" >
+        <action
+            android:id="@+id/action_question5Fragment_to_question6Fragment"
+            app:destination="@id/question6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question6Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question6Fragment"
+        android:label="fragment_question6"
+        tools:layout="@layout/fragment_question6" >
+        <action
+            android:id="@+id/action_question6Fragment_to_question7Fragment"
+            app:destination="@id/question7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question7Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question7Fragment"
+        android:label="fragment_question7"
+        tools:layout="@layout/fragment_question7" >
+        <action
+            android:id="@+id/action_question7Fragment_to_question8Fragment"
+            app:destination="@id/question8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question8Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question8Fragment"
+        android:label="fragment_question8"
+        tools:layout="@layout/fragment_question8" >
+        <action
+            android:id="@+id/action_question8Fragment_to_question9Fragment"
+            app:destination="@id/question9Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question9Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question9Fragment"
+        android:label="fragment_question9"
+        tools:layout="@layout/fragment_question9" >
+        <action
+            android:id="@+id/action_question9Fragment_to_question10Fragment"
+            app:destination="@id/question10Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question10Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question10Fragment"
+        android:label="fragment_question10"
+        tools:layout="@layout/fragment_question10" >
+        <action
+            android:id="@+id/action_question10Fragment_to_question11Fragment"
+            app:destination="@id/question11Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question11Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question11Fragment"
+        android:label="fragment_question11"
+        tools:layout="@layout/fragment_question11" >
+        <action
+            android:id="@+id/action_question11Fragment_to_question12Fragment"
+            app:destination="@id/question12Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question12Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question12Fragment"
+        android:label="fragment_question12"
+        tools:layout="@layout/fragment_question12" >
+        <action
+            android:id="@+id/action_question12Fragment_to_question13Fragment"
+            app:destination="@id/question13Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question13Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question13Fragment"
+        android:label="fragment_question13"
+        tools:layout="@layout/fragment_question13" >
+        <action
+            android:id="@+id/action_question13Fragment_to_question14Fragment"
+            app:destination="@id/question14Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question14Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question14Fragment"
+        android:label="fragment_question14"
+        tools:layout="@layout/fragment_question14" >
+        <action
+            android:id="@+id/action_question14Fragment_to_question15Fragment"
+            app:destination="@id/question15Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question15Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question15Fragment"
+        android:label="fragment_question15"
+        tools:layout="@layout/fragment_question15" >
+        <action
+            android:id="@+id/action_question15Fragment_to_question16Fragment"
+            app:destination="@id/question16Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question16Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question16Fragment"
+        android:label="fragment_question16"
+        tools:layout="@layout/fragment_question16" >
+        <action
+            android:id="@+id/action_question16Fragment_to_question17Fragment"
+            app:destination="@id/question17Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question18Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question18Fragment"
+        android:label="fragment_question18"
+        tools:layout="@layout/fragment_question18" >
+        <action
+            android:id="@+id/action_question18Fragment_to_question20Fragment"
+            app:destination="@id/question20Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question17Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question17Fragment"
+        android:label="fragment_question17"
+        tools:layout="@layout/fragment_question17" >
+        <action
+            android:id="@+id/action_question17Fragment_to_question18Fragment"
+            app:destination="@id/question18Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question19Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question19Fragment"
+        android:label="fragment_question19"
+        tools:layout="@layout/fragment_question19" >
+        <action
+            android:id="@+id/action_question19Fragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question20Fragment"
+        android:name="com.hansungtour.antidementia.fragment.Question20Fragment"
+        android:label="fragment_question20"
+        tools:layout="@layout/fragment_question20" >
+        <action
+            android:id="@+id/action_question20Fragment_to_question19Fragment"
+            app:destination="@id/question19Fragment" />
     </fragment>
 </navigation>

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 
-
 import com.hansungtour.antidementia.R
 import kotlinx.android.synthetic.main.fragment_question.* //...fragment_question**Number**.*
 
@@ -26,6 +25,7 @@ class QuestionFragment : Fragment(), View.OnClickListener {
         return inflater.inflate(R.layout.fragment_question, container, false) //fragment_question 수정
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -35,8 +35,6 @@ class QuestionFragment : Fragment(), View.OnClickListener {
             score[index] = 0
         }
 
-        QuestionFragmentDirections.actionQuestionFragmentToQuestion2Fragment(score) //Question**Number**FragmentDirections.actionQuestion**Number**FragmentToQuestion**Number**Question
-
         op1.setOnClickListener(this)
         op2.setOnClickListener(this)
         op3.setOnClickListener(this)
@@ -44,6 +42,7 @@ class QuestionFragment : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        //val action = QuestionFragmentDirections.actionQuestionFragmentToQuestion2Fragment(score) //Question**Number**FragmentDirections.actionQuestion**Number**FragmentToQuestion**Number**Question
         when(v?.id) { //0==오답, 1==정답
             R.id.op1->{score[0] = 0}
             R.id.op2->{score[0] = 1} //이 문제 같은 경우 여기가 정답

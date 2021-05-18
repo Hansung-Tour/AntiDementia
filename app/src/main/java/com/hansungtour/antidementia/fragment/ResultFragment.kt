@@ -38,7 +38,7 @@ class ResultFragment : Fragment(), View.OnClickListener {
         for(index in 0..19) {
             sum = sum + score[index]
         }
-        if (sum >= 10) {
+        if (sum >= 3) {
             resultMsg.text = "치매가 아닐 확률이 70%이상입니다. \n" +
                     "기억력은 잘 유지되고 있으나 추후에 나빠지는 느낌이 있다면 언제나 가까운 보건소에 방문하셔서 무료로 제공하는 치매검진을 받아보시기 바랍니다.\n"
         }
