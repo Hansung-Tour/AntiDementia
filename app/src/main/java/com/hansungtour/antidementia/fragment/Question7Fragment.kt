@@ -37,9 +37,9 @@ class Question7Fragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when(v?.id) { //0==오답, 1==정답, score[Number] Number가 0인 경우 1번문제
-            R.id.op1->{score[3] = 0}
+            R.id.op1->{score[3] = 1}
             R.id.op2->{score[3] = 0} //이 문제 같은 경우 여기가 정답
-            R.id.op3->{score[3] = 1}
+            R.id.op3->{score[3] = 0}
             R.id.next->{navController.navigate(R.id.action_question7Fragment_to_question8Fragment)}
         }
     }
