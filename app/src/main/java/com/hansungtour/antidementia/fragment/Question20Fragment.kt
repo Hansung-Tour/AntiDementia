@@ -40,7 +40,7 @@ class Question20Fragment : Fragment(), View.OnClickListener {
             R.id.op1->{score[3] = 1}
             R.id.op2->{score[3] = 0} //이 문제 같은 경우 여기가 정답
             R.id.op3->{score[3] = 0}
-            R.id.next->{navController.navigate(R.id.action_question20Fragment_to_question21Fragment)}
+            R.id.next->{navController.navigate(R.id.action_question20Fragment_to_questionFragment)}
         }
     }
 }
